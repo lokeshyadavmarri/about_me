@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Base Styles & Earth-Toned Theme
+   ========================================================================== */
+
+:root {
+  --bg-color: #f7f4ef;         /* Soft warm cream background */
+  --card-bg: #ffffff;          /* Pure white card backgrounds */
+  --primary-color: #a44a29;    /* Terracotta accent for headings */
+  --text-color: #332d2b;       /* Dark warm charcoal for primary body text */
+  --text-muted: #5c534e;      /* Muted earth tone for subtext */
+  --border-color: #e2d7cd;     /* Subtle tan border */
+  --link-color: #8c3b1e;       /* Rich warm brick link color */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 0;
+}
+
+/* Container for width control & centering */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ==========================================================================
+   Header Section
+   ========================================================================== */
+
+.site-header {
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+
+.name {
+  font-size: 2.25rem;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.bio {
+  font-size: 1rem;
+  color: var(--text-color);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Cards / Content Sections
+   ========================================================================== */
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.card h2 {
+  font-size: 1.35rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--bg-color);
+  padding-bottom: 0.5rem;
+}
+
+/* Lists styling */
+.skills-list, 
+.contact-list {
+  list-style-type: none;
+}
+
+.skills-list li, 
+.contact-list li {
+  margin-bottom: 0.75rem;
+}
+
+.skills-list li:last-child, 
+.contact-list li:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover, 
+a:focus {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
